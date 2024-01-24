@@ -2,12 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
 
 @layer components {
   .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+    @apply bg-serpink-400 px-4 py-2 font-serif font-bold text-serpurple-400 rounded-lg shadow-sm text-xl hover:bg-serpurple-400  hover:text-serpurple-200 transition ease-in-out duration-300 no-underline z-10;
+  }
+
+  .entregaveis-title{
+    @apply font-serif font-bold text-serpink-400 text-3xl m-0 leading-tight;
+  }
+
+  .entregaveis-subtitle{
+    @apply font-sans font-light text-serblack-900 text-2xl m-0 leading-tight;
+  }
+
+  .entregaveis-text{
+    @apply font-sans italic font-thin text-serpink-200 text-md mt-4 w-[20ch];
   }
 }
 
-*/
+.para-quem-é-sections{
+  position: relative;
+}
+
+.para-quem-é-sections::before{
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 100vw;
+  height: 4rem;
+  background-color: #E2C5D3;
+  opacity: .4;
+  z-index: -1;
+}
+
+.entregaveis-section{
+  position: relative;
+}
+
+.entregaveis-section::after{
+  content: "";
+  position: absolute;
+  bottom: -17rem;
+  right: 0;
+  width: 30rem;
+  height: 30rem;
+  opacity: 1;
+  background-image: url('riscos4_azul.png');
+}
+
+.card--entregaveis{
+  background-color: rgba(105, 93, 104, 0.15);
+  border-radius: 1.5rem;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 0 1rem rgba(0,0,0,.1);
+  margin-bottom: 2rem;
+}
