@@ -1,6 +1,6 @@
-<section class="m-h-[100vh] w-[100vw] bg-serpurple-400 px-24 pt-14 pb-20 entregaveis-section">
+<section class="m-h-[100vh] w-[100vw] bg-serpurple-400 px-8 md:px-24 pt-14 pb-20 entregaveis-section">
 
-  <div class="grid grid-cols-2">
+  <div class="grid md:grid-cols-2">
 
     <div class="flex flex-col">
       <div class="flex">
@@ -29,7 +29,7 @@
 
   </div>
 
-  <div class="grid grid-cols-[3fr_5fr_2fr] gap-6">
+  <div class="grid  grid-cols-[1fr] md:grid-cols-[3fr_5fr] lg:grid-cols-[3fr_5fr_2fr] gap-6">
 
     <div class="card--entregaveis flex flex-col items-center">
       <div class="flex flex-col">
@@ -39,7 +39,8 @@
       <p class="font-sans italic font-thin text-serpink-200 text-md mt-4 w-[20ch]">Receberemos duas terapeutas convidadas de renome no mercado para trocar experiências e falar da carreira.</p>
     </div>
 
-    <div class="card--entregaveis flex flex-col">
+    <div class="card--entregaveis flex flex-col bg-cover bg-center bg-no-repeat"
+         style="background-image: url(<%= asset_url 'recebiveis_card_bg.png' %>);">
       <div class="self-end flex flex-col">
         <p class="font-serif font-bold text-serpink-400 text-3xl m-0 leading-tight">Manual de</p>
         <p class="font-sans font-light text-serblack-900 text-3xl m-0 leading-none self-end">travessias</p>
@@ -57,7 +58,7 @@
 
   </div>
 
-  <div class="grid grid-cols-[2fr_3fr_5fr] gap-6">
+  <div class="grid grid-cols-[1fr] md:grid-cols-[3fr_5fr] lg:grid-cols-[2fr_3fr_5fr] gap-6">
 
     <div class="card--entregaveis flex flex-col items-center">
       <div class="flex flex-col">
