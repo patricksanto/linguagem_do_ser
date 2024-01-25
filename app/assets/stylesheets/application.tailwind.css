@@ -52,10 +52,11 @@
   background-image: url('riscos4_azul.png');
 }
 
-.card--entregaveis{
-  background-color: rgba(105, 93, 104, 0.15);
+.card--entregaveis {
+  background: linear-gradient(rgba(105, 93, 104, 0.1), rgba(105, 93, 104, 0.2));
   border-radius: 1.5rem;
   padding: 1.5rem 2.5rem;
   box-shadow: 0 0 1rem rgba(0,0,0,.1);
   margin-bottom: 2rem;
+  border: 1px solid rgba(105, 93, 104, 0.1);
 }
