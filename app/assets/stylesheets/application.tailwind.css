@@ -61,6 +61,10 @@
   border: 1px solid rgba(105, 93, 104, 0.1);
 }
 
+.meettings-section h2{
+  color: #E2C5D3;
+}
+
 .meettings-container{
   /* height: 400px; */
   display: flex;
@@ -95,12 +99,17 @@
     width: 70% !important;
   }
   .description p{
-    width: 25ch;
+    width: 100%;
     color: #E4d5fd ;
   }
   .description h4{
     font-size: 1.2rem;
-    width: 15ch;
+    width: 10ch;
+    line-height: 1;
+    margin: 0 !important;
+    justify-self: flex-end;
+    margin: 1rem!important;
+
   }
 
   .meettings-card > .row > .icon{
@@ -113,10 +122,11 @@
 
   .meettings-card > .row{
     height: 20rem;
-    /* overflow: visible; */
+    width: 100% !important;
   }
   .meettings-card > .row > .description{
     height: 100% !important;
+    width: 200px !important;
   }
 
 }
@@ -147,6 +157,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: flex-end;
   overflow: hidden;
   height: 50%;
   width: 520px ;
@@ -196,25 +207,42 @@
 }
 
 .meettings-card[for="c1"]{
-  background-image: url('teste1.jpg');
+  background-image: url('1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #C0C1DB;
+  background-blend-mode: multiply;
 }
 
 .meettings-card[for="c2"]{
-  background-image: url('teste2.jpg');
+  background-image: url('2.png');
+  background-color: #C0C1DB;
+  background-blend-mode: multiply;
 }
 
 .meettings-card[for="c3"]{
-  background-image: url('teste3.jpg');
+  background-image: url('3.png');
+  background-color: #F4E4EF;
+  background-blend-mode: multiply;
+
 }
 
 .meettings-card[for="c4"]{
-  background-image: url('teste4.jpg');
+  background-image: url('4.png');
+  background-color: #CCDEE6;
+  background-blend-mode: multiply;
+
 }
 
 .meettings-card[for="c5"]{
-  background-image: url('teste5.jpg');
+  background-image: url('5.png');
+  background-color: #C0C1DB;
+  background-blend-mode: multiply;
 }
 
 .meettings-card[for="c6"]{
-  background-image: url('teste6.jpg');
+  background-image: url('6.png');
+  background-color: #E2C5D3;
+  background-blend-mode: multiply;
 }
