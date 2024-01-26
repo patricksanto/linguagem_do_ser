@@ -62,10 +62,15 @@
 }
 
 .meettings-container{
-  height: 400px;
+  /* height: 400px; */
   display: flex;
   flex-wrap: no-wrap;
   justify-content: start;
+  overflow-x: auto;
+}
+
+.meettings-container::-webkit-scrollbar{
+  display: none;
 }
 
 .meettings-card{
@@ -80,6 +85,43 @@
   transition: .6s cubic-bezier(.28,-0.03,0,.99);
 }
 
+@media screen and (max-width: 768px) {
+  .meettings-card{
+    width: 60px;
+    overflow: visible;
+    margin: 0 .5rem;
+  }
+  .meettings-section input:checked + label{
+    width: 70% !important;
+  }
+  .description p{
+    width: 25ch;
+    color: #E4d5fd ;
+  }
+  .description h4{
+    font-size: 1.2rem;
+    width: 15ch;
+  }
+
+  .meettings-card > .row > .icon{
+    margin: .6rem!important;
+    padding: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-self: flex-end;
+  }
+
+  .meettings-card > .row{
+    height: 20rem;
+    /* overflow: visible; */
+  }
+  .meettings-card > .row > .description{
+    height: 100% !important;
+  }
+
+}
+
+
 .meettings-card > .row{
   color: #fff;
   display: flex;
@@ -90,12 +132,15 @@
   background: #928CAF;
   color: #fff;
   border-radius: 50%;
-  width: 50px;
+  padding: 1rem 1.2rem;
+  line-height: .8;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 1rem;
   font-family: serif;
+  border: 1px solid #fff;
+  align-self: flex-end;
 }
 
 .meettings-card > .row > .description{
@@ -103,7 +148,7 @@
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  height: 80px;
+  height: 50%;
   width: 520px ;
   opacity: 0;
   transform: translateY(30px);
@@ -112,20 +157,29 @@
 }
 
 .description p{
-  color: #E2C5D3;
+  color: white;
   padding-top: 5px;
-  margin: 0 0 .5rem 0;
+  margin: 0 1rem .5rem 0;
   padding: 0;
-  font-family: sans;
+  font-family: Open Sans, sans-serif;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.description p:last-child{
+  margin-bottom: 1.5rem;
 }
 
 .description h4{
   color: #F4E4EF;
-  margin: .5rem 0;
+  margin: .5rem 1rem 0 0;
   padding: 0;
   font-family: serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-height: .8;
+  text-align: right;
 }
 
 .meettings-section input{
