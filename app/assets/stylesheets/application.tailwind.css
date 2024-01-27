@@ -246,3 +246,19 @@
   background-color: #E2C5D3;
   background-blend-mode: multiply;
 }
+
+.pricing-card{
+  position: relative;
+}
+
+.pricing-card::after{
+  content: "";
+  position: absolute;
+  bottom: -10rem;
+  right: 7rem;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-image: url('riscos3_azul.png');
+  background-repeat: no-repeat;
+}
