@@ -272,7 +272,7 @@
 @media screen and (max-width: 768px) {
   .pricing-card::after{
     bottom: -5rem;
-    right: 10rem;
+    right: 15rem;
   }
 }
 
