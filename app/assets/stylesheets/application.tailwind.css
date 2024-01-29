@@ -103,8 +103,8 @@
     color: #E4d5fd ;
   }
   .description h4{
-    font-size: 1.2rem;
-    width: 10ch;
+    font-size: 1rem;
+    width: 15ch;
     line-height: 1;
     margin: 0 !important;
     justify-self: flex-end;
@@ -188,7 +188,7 @@
   margin: .5rem 1rem 0 0;
   padding: 0;
   font-family: serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-height: .8;
   text-align: right;
 }
