@@ -262,3 +262,49 @@
   background-image: url('riscos3_azul.png');
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 768px) {
+  .pricing-card::after{
+    bottom: -5rem;
+    right: 10rem;
+  }
+}
+
+.old-price:before{
+  position: absolute;
+  content: "";
+  width: 5rem;
+  height: 2px;
+  color: #E2C5D3;
+  background-color: #E2C5D3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  opacity: .7;
+}
+
+.new-price:before{
+  position: absolute;
+  content: "R$";
+  color: #C0C1DB;
+  top: 5%;
+  left: -30%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Noto Serif, serif;
+  opacity: .7;
+}
+
+.new-price:after{
+  position: absolute;
+  content: "em até 12x";
+  color: #C0C1DB;
+  bottom: -30%;
+  right: 10%;
+  width: 10ch;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Noto Serif, serif;
+  text-align: center;
+  opacity: .8;
+}
