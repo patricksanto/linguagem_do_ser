@@ -61,6 +61,12 @@
   border: 1px solid rgba(105, 93, 104, 0.1);
 }
 
+@media screen and (max-width: 768px) {
+  .card--entregaveis{
+    padding: 1rem;
+  }
+}
+
 .meettings-section h2{
   color: #E2C5D3;
 }
@@ -297,11 +303,11 @@
 
 .new-price:after{
   position: absolute;
-  content: "em até 12x";
+  content: "em 3x sem juros ou 12x de R$167,52";
   color: #C0C1DB;
-  bottom: -30%;
-  right: 10%;
-  width: 10ch;
+  bottom: -100%;
+  right: -10%;
+  width: 15ch;
   font-size: 1rem;
   font-weight: 700;
   font-family: Noto Serif, serif;
